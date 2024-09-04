@@ -57,11 +57,6 @@ export class Parser {
             characters.push(commentTag.escapedTag);
         }
 
-        // TODO
-        // html issues:
-            // single line before multiline
-        // TEST
-
         const matches = "(" + characters.join("|") + ")";
         const whitespace = "( |\t)";
         const newLine = "\r?\n";
