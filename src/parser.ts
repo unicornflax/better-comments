@@ -77,7 +77,7 @@ export class Parser {
 
         // Apply all configurable comment start tags
         this.expression += `${matches}+.*`;
-        this.expression += `(?:${newLine}${whitespace}*${this.delimiter}${whitespace}*(?!${matches}).*)*`;
+		this.expression += `(?:${newLine}${whitespace}*${this.delimiter}(?!${whitespace}*${matches}).*)*`;
     }
 
     /**
